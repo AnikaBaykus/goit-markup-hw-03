@@ -1,0 +1,219 @@
+/* ==========Общие Стили========== */
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --contacts-text-color: rgba(255, 255, 255, 0.6);
+  --page-color: #fff;
+  --page-color-dark: #000000;
+  --footer-color: #2f303a;
+  --secondary-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--page-color);
+  color: var(--main-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+/* ---Логотип ВебСтудии--- */
+.logo {
+  color: var(--accent-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo .dark {
+  color: var(--page-color-dark);
+}
+
+.logo .light {
+  color: var(--page-color);
+}
+
+/* ---Навигация по сайту--- */
+.site-nav .link {
+  color: var(--main-text-color);
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* ---Контакты--- */
+.contacts-header .link {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts-header .link:hover,
+.contacts-header .link:focus {
+  color: var(--accent-text-color);
+}
+
+.contacts-footer .link {
+  color: var(--contacts-text-color);
+
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
+  color: var(--accent-text-color);
+}
+
+.map .link {
+  color: var(--page-color);
+
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.button {
+  font-family: inherit;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* ==========/Общие========== */
+/* ======== Стили index.html ======== */
+
+/* ---Главный заголовок--- */
+.caption {
+  background-color: var(--footer-color);
+}
+
+.caption-text {
+  color: var(--page-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Главная кнопка */
+.caption .button {
+  color: var(--page-color);
+  background-color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  letter-spacing: 0.06em;
+}
+
+/* ---О нас--- */
+.about-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-text {
+  color: var(--secondary-text-color);
+
+  line-height: 1.71;
+}
+
+/* ---Наша команда--- */
+.team {
+  background-color: var(--secondary-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-profession {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* ========/index.html======== */
+/* ======= Стили portfolio.html ====== */
+
+/* Портфолио кнопка */
+.product .button {
+  color: var(--main-text-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.product .button:hover,
+.product .button:focus {
+  color: var(--page-color);
+  background-color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+/* Портфолио продукты */
+.product .link {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.product-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.product-work {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
+/* =======/portfolio.html====== */ ;
