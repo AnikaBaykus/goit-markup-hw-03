@@ -21,7 +21,17 @@ body {
 }
 
 .list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 .footer {
@@ -43,6 +53,9 @@ body {
 }
 
 .logo .light {
+  display: inline-block;
+  margin-bottom: 20px;
+
   color: var(--page-color);
 }
 
@@ -99,21 +112,45 @@ body {
 }
 
 .button {
-  font-family: inherit;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
   padding: 0;
-  border: none;
-  font: inherit;
+
   color: inherit;
   background-color: transparent;
-  cursor: pointer;
+
+  font-family: inherit;
+  text-decoration: none;
+  text-align: center;
 }
 
 .title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+.header {
+  background-color: cadetblue;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
+
+.wrap {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ==========/Общие========== */
 /* ======== Стили index.html ======== */
 
@@ -123,36 +160,45 @@ body {
 }
 
 .caption-text {
+  margin-bottom: 30px;
+
   color: var(--page-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 
 /* Главная кнопка */
 .caption .button {
+  padding: 10px 32px;
+  min-width: 200px;
+
   color: var(--page-color);
   background-color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   display: flex;
   letter-spacing: 0.06em;
 }
 
 /* ---О нас--- */
 .about-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .about-text {
+  margin-bottom: 94px;
   color: var(--secondary-text-color);
 
   line-height: 1.71;
@@ -188,7 +234,10 @@ body {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.63;
+
+  padding: 6px 22px;
+  min-width: 73px;
 }
 
 .product .button:hover,
