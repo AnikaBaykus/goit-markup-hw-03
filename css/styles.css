@@ -151,6 +151,10 @@ p {
   padding-bottom: 94px;
 }
 
+.wrap-second {
+  padding-bottom: 94px;
+}
+
 /* ==========/Общие========== */
 /* ======== Стили index.html ======== */
 
@@ -167,7 +171,6 @@ p {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-align: center;
@@ -198,7 +201,6 @@ p {
 }
 
 .about-text {
-  margin-bottom: 94px;
   color: var(--secondary-text-color);
 
   line-height: 1.71;
