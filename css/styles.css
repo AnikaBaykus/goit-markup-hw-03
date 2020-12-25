@@ -35,6 +35,8 @@ p {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-color);
 }
 
@@ -49,6 +51,7 @@ p {
 }
 
 .logo .dark {
+  margin-right: 90px;
   color: var(--page-color-dark);
 }
 
@@ -60,7 +63,28 @@ p {
 }
 
 /* ---Навигация по сайту--- */
+.header-nav {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--main-text-color);
 
   font-weight: 500;
@@ -78,7 +102,20 @@ p {
 }
 
 /* ---Контакты--- */
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-header .item + .item {
+  margin-left: 50px;
+}
+
 .contacts-header .link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -91,24 +128,39 @@ p {
   color: var(--accent-text-color);
 }
 
+.footer-nav {
+  display: flex;
+}
+
+.map {
+  display: flex;
+}
+
+.map .link {
+  margin-bottom: 9px;
+  display: flex;
+  color: var(--page-color);
+
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+
 .contacts-footer .link {
+  display: flex;
   color: var(--contacts-text-color);
 
   line-height: 1.71;
   text-decoration: none;
 }
 
+.contacts-footer li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .contacts-footer .link:hover,
 .contacts-footer .link:focus {
   color: var(--accent-text-color);
-}
-
-.map .link {
-  color: var(--page-color);
-
-  line-height: 1.71;
-  text-decoration: none;
-  font-style: normal;
 }
 
 .button {
@@ -134,13 +186,13 @@ p {
   text-align: center;
 }
 .header {
-  background-color: cadetblue;
+  background-color: var(--page-color);
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid red;
@@ -160,11 +212,18 @@ p {
 
 /* ---Главный заголовок--- */
 .caption {
+  padding: 200px 0px;
   background-color: var(--footer-color);
+}
+.caption-hero {
+  text-align: center;
 }
 
 .caption-text {
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 696px;
 
   color: var(--page-color);
 
@@ -173,7 +232,6 @@ p {
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  text-align: center;
 }
 
 /* Главная кнопка */
@@ -188,11 +246,22 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   letter-spacing: 0.06em;
 }
 
 /* ---О нас--- */
+
+.about-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.about-item {
+  width: 270px;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .about-title {
   margin-bottom: 10px;
 
@@ -205,13 +274,38 @@ p {
 
   line-height: 1.71;
 }
+/* ---Чем мы занимаемся--- */
+.job ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-job {
+  display: flex;
+}
 
 /* ---Наша команда--- */
 .team {
   background-color: var(--secondary-color);
 }
 
+.team ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-item {
+  background-color: var(--page-color);
+}
+
+.team-photo {
+  display: flex;
+  margin-bottom: 30px;
+}
+
 .team-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -219,6 +313,7 @@ p {
 }
 
 .team-profession {
+  margin-bottom: 30px;
   color: var(--secondary-text-color);
 
   font-size: 16px;
@@ -229,7 +324,20 @@ p {
 /* ======= Стили portfolio.html ====== */
 
 /* Портфолио кнопка */
+
+.product-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-button:not(:first-child) {
+  margin-left: 8px;
+}
+
 .product .button {
+  margin-bottom: 50px;
+  display: block;
+
   color: var(--main-text-color);
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -249,12 +357,38 @@ p {
   border-color: var(--accent-text-color);
 }
 /* Портфолио продукты */
+
+.product-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-link {
+  margin-right: 30px;
+  margin-top: 30px;
+  background-color: var(--page-color);
+}
+.item-link:nth-child(3n) {
+  margin-right: 0px;
+}
+.item-link:nth-child(-n + 3) {
+  margin-top: 0;
+}
+
 .product .link {
   color: var(--main-text-color);
   text-decoration: none;
 }
 
+.product-image {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .product-text {
+  margin-bottom: 4px;
+  margin-left: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -262,6 +396,8 @@ p {
 }
 
 .product-work {
+  margin-bottom: 20px;
+  margin-left: 24px;
   color: var(--secondary-text-color);
 
   font-size: 16px;

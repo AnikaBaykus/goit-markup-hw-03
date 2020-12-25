@@ -21,26 +21,30 @@
     <!-- Шапка -->
 
     <header class="header">
-      <div class="container">
-        <nav class>
+      <div class="container header-nav">
+        <nav class="nav">
           <a href="./index.html" class="logo">
             Web<span class="dark">Studio</span>
           </a>
 
           <ul class="list site-nav">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="#" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="list contacts-header">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -49,16 +53,18 @@
     <main>
       <!-- Главный баннер -->
       <section class="caption">
-        <h1 class="caption-text">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <div class="container caption-hero">
+          <h1 class="caption-text">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Чем мы занимаемся/о нас -->
       <section class="about wrap">
         <div class="container">
-          <h2>О нас (скрытый заголовок)</h2>
-          <ul class="list">
-            <li>
+          <h2 hidden="true">О нас (скрытый заголовок)</h2>
+          <ul class="list about-list">
+            <li class="about-item">
               <h3 class="about-title">внимание к деталям</h3>
               <p class="about-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -66,7 +72,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="about-item">
               <h3 class="about-title">пунктуальность</h3>
               <p class="about-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -74,7 +80,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="about-item">
               <h3 class="about-title">планирование</h3>
               <p class="about-text">
                 Равным образом консультация с широким активом в значительной
@@ -82,7 +88,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="about-item">
               <h3 class="about-title">современные технологии</h3>
               <p class="about-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -98,7 +104,7 @@
           <h2 class="title">Чем мы занимаемся</h2>
 
           <ul class="list">
-            <li>
+            <li class="item-job">
               <img
                 src="./img/img-number1.jpg"
                 alt="изображение Макинтоша"
@@ -106,7 +112,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="item-job">
               <img
                 src="./img/img-number2.jpg"
                 alt="изображения Макбука и Айфона"
@@ -114,7 +120,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="item-job">
               <img
                 src="./img/img-number3.jpg"
                 alt="изображение Айпада"
@@ -131,8 +137,9 @@
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list">
-            <li>
+            <li class="team-item">
               <img
+                class="team-photo"
                 src="./img/img-igor.jpg"
                 alt="Фото Игоря Демьяненко"
                 width="270"
@@ -141,8 +148,9 @@
               <h3 class="team-name">Игорь Демьяненко</h3>
               <p class="team-profession">Product Designer</p>
             </li>
-            <li>
+            <li class="team-item">
               <img
+                class="team-photo"
                 src="./img/img-olga.jpg"
                 alt="Фото Ольги Репиной"
                 width="270"
@@ -151,8 +159,9 @@
               <h3 class="team-name">Ольга Репина</h3>
               <p class="team-profession">Frontend Developer</p>
             </li>
-            <li>
+            <li class="team-item">
               <img
+                class="team-photo"
                 src="./img/img-nikolaj.jpg"
                 alt="Фото Николая Тарасова"
                 width="270"
@@ -161,8 +170,9 @@
               <h3 class="team-name">Николай Тарасов</h3>
               <p class="team-profession">Marketing</p>
             </li>
-            <li>
+            <li class="team-item">
               <img
+                class="team-photo"
                 src="./img/img-michael.jpg"
                 alt="Фото Михаила Ермакова"
                 width="270"
@@ -177,7 +187,7 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-wrap">
         <a href="./index.html" class="logo">
           Web<span class="light">Studio</span>
         </a>
@@ -188,7 +198,7 @@
 
         <ul class="list contacts-footer">
           <li>
-            <a href="mailto:info@devstudio.com " class="link"
+            <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
